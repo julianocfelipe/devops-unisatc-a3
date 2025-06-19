@@ -18,7 +18,7 @@ test('Deve criar um novo autor', async ({ page }) => {
     await page.getByRole('link', { name: 'Autor' }).click();
 
     await page.click('text=Create new entry');
-    await page.fill('input[name="name"]', 'Nome Teste');
+    await page.fill('input[name="nam"]', 'Nome Teste');
     await page.fill('input[name="email"]', 'teste@email.com');
 
     await page.click('button:has-text("Save")');
