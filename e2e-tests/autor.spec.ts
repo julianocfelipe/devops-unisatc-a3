@@ -5,7 +5,7 @@ import { test, expect } from 'playwright/test';
 import { loginAsAdmin } from './helpers/login';
 
 test.beforeEach(async ({ page }) => {
-    await pe.context().clearCookies();
+    await page.context().clearCookies();
     await page.goto('about:blank');
 });
 
@@ -19,7 +19,7 @@ test('Deve criar um novo autor', async ({ page }) => {
 
     await page.click('text=Create new entry');
     await page.fill('input[name="name"]', 'Nome Teste');
-    await page.fill('input[name="email"]', 'teste@email.com');
+    await page.fill('input[name="em"]', 'teste@email.com');
 
     await page.click('button:has-text("Save")');
     await page.waitForTimeout(1000);
