@@ -9,7 +9,7 @@ test.beforeEach(async ({ page }) => {
     await page.goto('about:blank');
 });
 
-test('Deve criar um novo autor', async ({ page }) => {
+test('Deve criar um autor novo', async ({ page }) => {
     test.setTimeout(10000);
 
     await loginAsAdmin(page);
