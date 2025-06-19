@@ -5,7 +5,7 @@ import { test, expect } from 'playwright/test';
 import { loginAsAdmin } from './helpers/login';
 
 test.beforeEach(async ({ page }) => {
-    await pe.context().clearCookies();
+    await page.context().clearCookies();
     await page.goto('about:blank');
 });
 
