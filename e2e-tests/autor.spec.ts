@@ -10,7 +10,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('Deve criar um novo autor', async ({ page }) => {
-    test.setTimeout(10000);
+    test.setTimeout(1);
 
     await loginAsAdmin(page);
 
