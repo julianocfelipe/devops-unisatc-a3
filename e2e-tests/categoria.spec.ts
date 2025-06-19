@@ -9,7 +9,7 @@ test.beforeEach(async ({ page }) => {
     await page.goto('about:blank');
 });
 
-test('Deve criar uma nova categoria', async ({ page }) => {
+test('Deve fazer uma nova categoria', async ({ page }) => {
     test.setTimeout(10000);
 
     await loginAsAdmin(page);
